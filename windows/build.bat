@@ -188,7 +188,7 @@ if %INSTALL% EQU 1 (
 		move *.zip "%OUTDIR%" 2>NUL
 		move bin\Release\* "%OUTDIR%" 2>NUL
 		move Release\* "%OUTDIR%" 2>NUL
-		move cmd\Release\* "%OUTDIR%" 2>NUL
+		move cmd\Release\*.exe "%OUTDIR%" 2>NUL
 		move cmd\benchmark\Release\* "%OUTDIR%" 2>NUL
 		move cmd\test\Release\*.exe "%OUTDIR%" 2>NUL
 		move silkworm\Release\* "%OUTDIR%"
@@ -197,14 +197,17 @@ if %INSTALL% EQU 1 (
 		move silkworm\sentry\Release\* "%OUTDIR%"
 		move third_party\cbor-cpp\Release\* "%OUTDIR%"
 		move third_party\CRoaring\src\Release\* "%OUTDIR%"
-		move third_party\evmone\evmc\lib\instructions\Release\* "%OUTDIR%"
-		move third_party\evmone\evmc\lib\loader\Release\* "%OUTDIR%"
-		move third_party\evmone\evmc\lib\tooling\Release\* "%OUTDIR%"
+		move third_party\evmone\evmc\examples\example_precompiles_vm\Release\*.lib "%OUTDIR%"
+		move third_party\evmone\evmc\examples\example_vm\Release\*.lib "%OUTDIR%"
+		move third_party\evmone\evmc\examples\Release\*.lib "%OUTDIR%"
+		move third_party\evmone\evmc\lib\instructions\Release\*.lib "%OUTDIR%"
+		move third_party\evmone\evmc\lib\loader\Release\*.lib "%OUTDIR%"
+		move third_party\evmone\evmc\lib\tooling\Release\*.lib "%OUTDIR%"
 		move third_party\libmdbx\Release\mdbx.lib "%OUTDIR%"
 		move third_party\libmdbx\Release\*.exe "%OUTDIR%"
 		move third_party\silkpre\Release\* "%OUTDIR%"
-		move third_party\silkpre\lib\Release\* "%OUTDIR%"
-		move third_party\silkpre\third_party\libff\libff\Release\* "%OUTDIR%"
+		move third_party\silkpre\lib\Release\*.lib "%OUTDIR%"
+		move third_party\silkpre\third_party\libff\libff\Release\*.lib "%OUTDIR%"
 
 		echo.
 		dir "%OUTDIR%"
