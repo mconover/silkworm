@@ -185,7 +185,12 @@ if %INSTALL% EQU 1 (
 		echo [%DATE% %TIME%] devenv returned %ERRORLEVEL%
 		echo [%DATE% %TIME%] devenv returned %ERRORLEVEL% >> OUTPUT.txt
 
+		move *.zip "%OUTDIR%" 2>NUL
+		move bin\Release\* "%OUTDIR%" 2>NUL
+		move Release\* "%OUTDIR%" 2>NUL
 		move cmd\Release\* "%OUTDIR%" 2>NUL
+		move cmd\benchmark\Release\* "%OUTDIR%" 2>NUL
+		move cmd\test\Release\*.exe "%OUTDIR%" 2>NUL
 		move silkworm\Release\* "%OUTDIR%"
 		move silkworm\core\Release\* "%OUTDIR%"
 		move silkworm\node\Release\* "%OUTDIR%"
