@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\SOURCE\erigon-silkworm\silkworm\build.vs2022\CMakeFiles\d8073ec11d5997af1af47804e707edf6\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{136AF674-6CB8-3091-8CBB-2E4D0A88EDCC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
